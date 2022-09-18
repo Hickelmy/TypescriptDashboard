@@ -10,6 +10,9 @@ export const Grid = styled.div`
     "AS CT";
 
   height: 100vh;
+  color: ${(props) => props.theme.colors.white};
+
+  background-color: ${(props) => props.theme.colors.secondary};
 
   /**
   *MH = MainHeader
