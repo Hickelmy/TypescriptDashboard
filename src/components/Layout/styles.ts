@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
+/**
+ * Layout
+ * MH = Main Header
+ * AS = Aside
+ * CT = Content
+ */
+
 export const Grid = styled.div`
-  display: Grid;
+  display: grid;
   grid-template-columns: 250px auto;
   grid-template-rows: 70px auto;
 
@@ -10,14 +17,14 @@ export const Grid = styled.div`
     "AS CT";
 
   height: 100vh;
-  color: ${(props) => props.theme.colors.white};
+  min-width: 315px;
 
-  background-color: ${(props) => props.theme.colors.secondary};
+  @media (max-width: 600px) {
+    grid-template-columns: 100%;
+    grid-template-rows: 70px auto;
 
-  /**
-  *MH = MainHeader
-  *AS = Aside
-  *CT = content
-
-  */
+    grid-template-areas:
+      "MH"
+      "CT";
+  }
 `;
