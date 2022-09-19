@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 import { Toggle } from "../../components/Toggle";
 import { Container, Welcome, UserName, Profile } from "./styles";
 import emojis from "../../utils/emojis";
